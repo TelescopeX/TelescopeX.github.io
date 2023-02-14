@@ -43,7 +43,7 @@ code:
   # Code language
   language:
     enable: true
-    default: "TEXT"
+    default: "HTML"
 
   # 代码高亮
   # Code highlight
@@ -112,7 +112,7 @@ fun_features:
     # Options: hover | always | touch
     visible: hover
     # Options: § | # | ❡
-    icon: ""
+    icon: "bitbug_favicon(1).ico"
 
   # 加载进度条
   # Progress bar when loading
@@ -432,7 +432,7 @@ footer:
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: false
+    enable: true
 
     # 统计数据来源，使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
     # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
@@ -442,7 +442,7 @@ footer:
   # 国内大陆服务器的备案信息
   # For Chinese mainland website policy, other areas keep disable
   beian:
-    enable: false
+    enable: true
     # ICP证号
     icp_text: 京ICP证123456号
     # 公安备案号，不填则只显示ICP
@@ -724,11 +724,11 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: true
+    post:enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
-    type: disqus
+    type: valine
     valine:
   enable: true
   appId: 3fLjOKXj5B4GvxCrQWpLKB29-gzGzoHsz
@@ -988,7 +988,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default01.jpg
+  banner_img: /img/loading.gif
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -1034,8 +1034,8 @@ links:
   # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
   # Custom content at the bottom of the links
   custom:
-    enable: false
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
+    enable: true
+    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Telescope</li><li>简介：Telescope 的博客</li><li>链接：https://github.com/TelescopeX/TelescopeX.github.io.git</li><li>图片： </li></ul>'
 
   # 评论插件
   # Comment plugin
