@@ -30,7 +30,7 @@ tab_title_separator: " - "
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
 # Force all links to be HTTPS (applicable to HTTP mixed error)
-force_https: false
+force_https: true
 
 # 代码块的增强配置
 # Enhancements to code blocks
@@ -64,7 +64,7 @@ code:
       # Select a style in the link
       # See: https://highlightjs.org/static/demo/
       style: "github gist"
-      style_dark: "dark"
+      style_dark: "Agate"
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
@@ -112,7 +112,7 @@ fun_features:
     # Options: hover | always | touch
     visible: hover
     # Options: § | # | ❡
-    icon: "bitbug_favicon(1).ico"
+    icon: ""
 
   # 加载进度条
   # Progress bar when loading
@@ -225,7 +225,7 @@ color:
 # Font
 font:
   font_size: 16px
-  font_family:
+  font_family: system-ui;
   letter_spacing: 0.02em
   code_font_size: 85%
 
@@ -368,7 +368,7 @@ search:
   # 搜索的范围
   # Search field
   # Options: post | page | all
-  field: all
+  field: page
 
   # 搜索是否扫描正文
   # If true, search will scan the post content
@@ -538,7 +538,7 @@ post:
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img: /img/default3.jpeg
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -576,7 +576,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: false
+      enable: true
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
@@ -664,7 +664,7 @@ post:
     # 显示更新日期
     # Show update date
     update_date:
-      enable: false
+      enable: true
       format: "LL"
 
   # 文章底部上一篇下一篇功能
@@ -676,6 +676,7 @@ post:
   # Image caption
   image_caption:
     enable: true
+  
 
   # 文章图片可点击放大
   # Zoom feature of images
@@ -724,11 +725,12 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    post:enable: true
+     enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
-    type: valine
+    type: disqus
+    shortname: fluid
     valine:
   enable: true
   appId: 3fLjOKXj5B4GvxCrQWpLKB29-gzGzoHsz
