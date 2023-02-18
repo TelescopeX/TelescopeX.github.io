@@ -64,7 +64,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"HTML"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":true,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":true,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -243,8 +243,86 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/08/26/Hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2/" target="_self">
+          <img src="/img/avatar.png" alt="如何更换Hexo主题">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/26/Hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2/" target="_self">
+          如何更换Hexo主题
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/08/26/Hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2/" target="_self">
+        <div>
+          一，下载存放主题：第一步：到hexo官网下载hexo主题包（压缩包一般存储在GitHub上）。  把压缩包解压到博客系统的文件夹themes。（我的是 E:&#x2F;blog&#x2F;themes）  第二步：使用node更换主题 使用nond控制栏工具，进入到我们Hexo的安装包下面。我的hexo主题放在E盘的blog中。因此，我输入下述代码  $ E： （先是进入E盘）$ cd blog
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-26 00:28" pubdate>
+              2022-08-26
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/08/24/%E4%BD%BF%E7%94%A8node%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_self">
+          <img src="/img/avatar.png" alt="使用node—键创建博客">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/24/%E4%BD%BF%E7%94%A8node%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_self">
+          使用node—键创建博客
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/08/24/%E4%BD%BF%E7%94%A8node%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_self">
+        <div>
+          一.安装hexo框架 安装node.js  管理员身份启动命令行  node -v  #查看node版本 （最好是用14或者以上的版本）  npm -v  #查看npm版本   npm install -g cnpm –registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org  #安装淘宝的cnpm 管理器  cnpm -v  #查看cnpm版本  cnpm ins
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-24 05:53" pubdate>
+              2022-08-24
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2022/08/24/hello-hexo/" target="_self">
-          <img src="/img/default3.jpeg" alt="Hexo 说明书">
+          <img src="/img/avatar.png" alt="Hexo 说明书">
         </a>
       </div>
     
