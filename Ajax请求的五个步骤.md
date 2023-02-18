@@ -30,7 +30,7 @@ var xmlHttpRequest = new XMLHttpRequest();
 **由于无法确定用户使用的是什么浏览器,所以在创建XMLHttpRequest对象时,最好将以上两种方法都加上.如以下代码所示:**
 
  ```ruby
- var xmlHttpRequest;  //定义一个变量,用于存放XMLHttpRequest对象
+ var xmlHttpRequest;  //定义一个变量,用于存放XMLHttpRequest对象.
     createXMLHttpRequst();   //调用创建对象的方法
     //创建XMLHttpRequest对象的方法 
     function createXMLHttpRequest(){                                                 
